@@ -1,0 +1,43 @@
+# Python 相关缓存
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# VSCode 配置
+.vscode/
+*.code-workspace
+
+# 虚拟环境
+venv/
+env/
+.venv/
+
+# 数据文件
+*.csv
+*.tsv
+*.xlsx
+*.h5
+*.nii
+*.nii.gz
+
+# 日志和临时文件
+*.log
+*.tmp
+*.bak
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+pyrightconfig.json
+
+# 输出目录
+build/
+dist/
+*.egg-info/
+
+# 你项目特有的不需要提交的目录
+output/
+checkpoints/
+results/

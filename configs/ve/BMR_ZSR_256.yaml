@@ -1,0 +1,65 @@
+# config.yaml
+
+# 1. Training Configuration
+training:
+  continuous: true
+  reduce_mean: false
+  sde: "vesde"
+
+# 2. Sampling Configuration
+sampling:
+  n_steps_each: 1
+  noise_removal: true
+  probability_flow: false
+  snr: 0.16
+  method: "pc"
+  predictor: "reverse_diffusion"
+  corrector: "langevin"
+
+# 4. Data Configuration
+data:
+  dataset: "BMR"
+  save_path: "results/BMR_256_ncsnpp_Chung"
+  image_size: 256
+  num_channels: 1
+  is_complex: false
+  is_multi: false
+  centered: false
+
+# 5. Model Configuration
+model:
+  name: "ncsnpp"
+  # SDE parameters
+  sigma_max: 378
+  sigma_min: 0.01
+  num_scales: 2000
+  beta_min: 0.1
+  beta_max: 20.0
+  # Architecture
+  scale_by_sigma: true
+  ema_rate: 0.999
+  normalization: "GroupNorm"
+  nonlinearity: "swish"
+  nf: 128
+  ch_mult: [1, 2, 2, 2]
+  num_res_blocks: 4
+  attn_resolutions: [16]
+  resamp_with_conv: true
+  conditional: true
+  fir: true
+  fir_kernel: [1, 3, 3, 1]
+  skip_rescale: true
+  resblock_type: "biggan"
+  progressive: "none"
+  progressive_input: "residual"
+  progressive_combine: "sum"
+  attention_type: "ddpm"
+  init_scale: 0.0
+  fourier_scale: 16
+  conv_size: 3
+  dropout: 0.0
+  embedding_type: "fourier"
+
+# 7. Global Settings
+seed: 42
+# device: None
