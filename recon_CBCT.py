@@ -139,7 +139,6 @@ def main(args):
     print(f"Task: {problem}")
 
     gt_image, metainfo = load_and_preprocess_image(args, config)  # [0,1]
-    print(f"图像尺寸: {gt_image.shape}, 间距: {metainfo['spacing']}")
     D, H, W = gt_image.shape[1], gt_image.shape[2], gt_image.shape[3]
 
     angles_FV = np.linspace(0, 2 * np.pi, view_full_num, endpoint=False).astype(np.float32)

@@ -29,7 +29,6 @@ CHECKPOINT_PATH="/your/checkpoint/path/checkpoint_70.pth"
 CONFIG_PATH="configs/ve/AAPM_256_ncsnpp_Chung.yaml"
 
 
-# python recon_uni_simu_L506.py \
 python recon_CBCT.py \
 --method $METHOD \
 --task $TASK \
