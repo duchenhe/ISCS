@@ -2,8 +2,10 @@
 
 Official PyTorch implementation for "Improving 2D Diffusion Models for 3D Medical Imaging with Inter‑Slice Consistent Stochasticity"
 
-![SVCT-30](./figures/merge.gif)
+## 🖼️ Visualization
 
+![SVCT-30](./figures/merge.gif)
+Fig. 1: Qualitative results of DDS and DDS+ISCS on a representative sample for SVCT of 30 views.
 
 ## 🧪 Running Reconstructions
 
