@@ -2,6 +2,9 @@
 
 Official PyTorch implementation for "Improving 2D Diffusion Models for 3D Medical Imaging with Inter‑Slice Consistent Stochasticity"
 
+![SVCT-30](./figures/merge.gif)
+
+
 ## 🧪 Running Reconstructions
 
 We provide demo scripts for two inverse problems.
