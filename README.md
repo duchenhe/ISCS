@@ -1,9 +1,7 @@
 # 🧬 Improving 2D Diffusion Models for 3D Medical Imaging with Inter-Slice Consistent Stochasticity (ISCS)
 
-[![License: Apache-2.0](https://img.shields.io/badge/License-Apache--2.0-blue.svg)](LICENSE)
-[![Framework](https://img.shields.io/badge/Framework-PyTorch-red.svg)](https://pytorch.org/)
 [![OpenReview](https://img.shields.io/badge/Paper-OpenReview-8A2BE2.svg)](https://openreview.net/forum?id=R5ETdN6ifA)
-[![arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B.svg)](#)
+[![arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B.svg)](https://arxiv.org/abs/2602.04162)
 
 Official PyTorch implementation for the ICLR 2026 paper:
 **_Improving 2D Diffusion Models for 3D Medical Imaging with Inter-Slice Consistent Stochasticity_**.
@@ -146,4 +144,9 @@ This project is licensed under the Apache License 2.0. See `LICENSE` for details
 
 ## 🙏 Acknowledgements
 
-This repository is built upon [score_sde_pytorch](https://github.com/yang-song/score_sde_pytorch). We thank the authors for releasing their code.
+This repository builds upon several fantastic open-source projects. We'd like to express our gratitude to the authors of:
+
+- [score_sde_pytorch](https://github.com/yang-song/score_sde_pytorch)
+- [DiffusionMBIR](https://github.com/hyungjin-chung/DiffusionMBIR)
+- [DDS](https://github.com/hyungjin-chung/DDS)
+- [TPDM](https://github.com/hyn2028/tpdm)
