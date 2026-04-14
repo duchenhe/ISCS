@@ -15,6 +15,8 @@ This repository provides demo pipelines for:
 
 3D medical imaging is crucial for clinical diagnosis and scientific research, but learning **3D** diffusion priors is often difficult due to limited data availability and heavy training costs. A common compromise is to train diffusion models on **2D** slices and stack them for 3D inverse problems—but the intrinsic randomness in diffusion sampling can cause severe **inter-slice discontinuities**.
 
+> 💡 Intuition: The core idea is straightforward. **If two slices are adjacent in the clean data manifold, they should also reside close to each other in the noise manifold.** Therefore, their stochastic noise structures during the diffusion sampling process should be highly correlated, rather than completely independent.
+
 We introduce **Inter-Slice Consistent Stochasticity (ISCS)**, a simple yet effective strategy to improve 3D coherence by **controlling the consistency of stochastic noise components during sampling**. This aligns sampling trajectories across slices **without adding new loss terms, optimization steps, or extra computational cost**. ISCS is plug-and-play and can be dropped into existing 2D-trained diffusion-based 3D reconstruction pipelines, yielding improved performance across several medical imaging tasks. ✨
 
 ![SVCT-30](./figures/SVCT-30-256.gif)
@@ -25,7 +27,8 @@ Figure: qualitative comparison on SVCT (30 views).
 
 ## 🚀 Quick start
 
-1) Prepare a 3D volume (NIfTI: `.nii` / `.nii.gz`) and a diffusion checkpoint.
+1) Prepare a 3D volume (NIfTI: `.nii` / `.nii.gz`) and a diffusion checkpoint. **Pre-trained model weights on CT data can be found in the [GitHub release](https://github.com/duchenhe/ISCS/releases/tag/diffusion-prior) page.**
+
 2) Edit paths in the demo scripts:
    - `recon_CBCT.sh` for LACT/SVCT CBCT
    - `recon_ZSR.sh` for MRI ZSR
