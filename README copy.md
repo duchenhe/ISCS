@@ -1,27 +1,15 @@
-<div align="center">
+# 🧬 Improving 2D Diffusion Models for 3D Medical Imaging with Inter-Slice Consistent Stochasticity (ISCS)
 
-# 🧊 Improving 2D Diffusion Models for 3D Medical Imaging with Inter-Slice Consistent Stochasticity (ISCS)
+[![OpenReview](https://img.shields.io/badge/Paper-OpenReview-8A2BE2.svg)](https://openreview.net/forum?id=R5ETdN6ifA)
+[![arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B.svg)](https://arxiv.org/abs/2602.04162)
 
-<p>
-  <a href="https://duchenhe.com/">Chenhe Du</a><sup>1</sup>&nbsp;&nbsp;
-  <a href="https://iwuqing.github.io/">Qing Wu</a><sup>1</sup>&nbsp;&nbsp;
-  <a href="https://meijitian.github.io/">Xuanyu Tian</a><sup>1</sup>&nbsp;&nbsp;
-  <a href="https://faculty.sist.shanghaitech.edu.cn/yujingyi/">Jingyi Yu</a><sup>1</sup>&nbsp;&nbsp;
-  <a href="https://bme.sjtu.edu.cn/Web/FacultyDetail/72">Hongjiang Wei</a><sup>2</sup>
-  <br>
-  <a href="https://sist.shanghaitech.edu.cn/zhangyy8/main.htm">Yuyao Zhang</a><sup>1✉️</sup>&nbsp;&nbsp;
-</p>
+Official PyTorch implementation for the ICLR 2026 paper:
+**_Improving 2D Diffusion Models for 3D Medical Imaging with Inter-Slice Consistent Stochasticity_**.
 
-<p>
-        <sup>1</sup>ShanghaiTech &nbsp;&nbsp;&nbsp;
-        <sup>2</sup>SJTU
-</p>
+This repository provides demo pipelines for:
 
-[![OpenReview](https://img.shields.io/badge/Paper-OpenReview-8A2BE2.svg)](https://openreview.net/forum?id=R5ETdN6ifA) [![arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B.svg)](https://arxiv.org/abs/2602.04162)
-
-![overview](./figures/overview.png)
-
-</div>
+- 🩻 Cone-beam CT (CBCT) reconstruction under limited-angle CT (LACT) and sparse-view CT (SVCT)
+- 🧠 MRI z-axis super-resolution (ZSR) / slice interpolation
 
 ## 🧾 Overview
 
@@ -31,12 +19,9 @@
 
 We introduce **Inter-Slice Consistent Stochasticity (ISCS)**, a simple yet effective strategy to improve 3D coherence by **controlling the consistency of stochastic noise components during sampling**. This aligns sampling trajectories across slices **without adding new loss terms, optimization steps, or extra computational cost**. ISCS is plug-and-play and can be dropped into existing 2D-trained diffusion-based 3D reconstruction pipelines, yielding improved performance across several medical imaging tasks. ✨
 
-<div align="center">
-
 ![SVCT-30](./figures/SVCT-30-256.gif)
-*qualitative comparison on SVCT (30 views).*
 
-</div>
+Figure: qualitative comparison on SVCT (30 views).
 
 ---
 
