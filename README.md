@@ -13,8 +13,8 @@
 </p>
 
 <p>
-        <sup>1</sup>ShanghaiTech &nbsp;&nbsp;&nbsp;
-        <sup>2</sup>SJTU
+        <sup>1</sup>ShanghaiTech University &nbsp;&nbsp;&nbsp;
+        <sup>2</sup>Shanghai Jiao Tong University &nbsp;&nbsp;&nbsp;
 </p>
 
 [![OpenReview](https://img.shields.io/badge/Paper-OpenReview-8A2BE2.svg)](https://openreview.net/forum?id=R5ETdN6ifA) [![arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B.svg)](https://arxiv.org/abs/2602.04162)
